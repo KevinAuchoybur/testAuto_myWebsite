@@ -1,6 +1,13 @@
-# testAuto_myWebsite
+# Tests E2E – kevinauchoybur.me
 
-Suite de tests end-to-end (E2E) écrite avec [Cypress](https://www.cypress.io/) pour le site [kevinauchoybur.me](https://kevinauchoybur.me/).
+Suite de tests end-to-end (E2E) écrite avec [Cypress](https://www.cypress.io/) pour mon site [kevinauchoybur.me](https://kevinauchoybur.me/).
+
+## Scénarios automatisés
+
+| Fichier | Scénario | Vérification |
+|---|---|---|
+| `cypress/e2e/home.cy.js` | Chargement de la page d'accueil | La page se charge et le `<body>` est visible |
+| `cypress/e2e/home.cy.js` | Titre de l'onglet | Le `<title>` de la page vaut `Kevin Auchoybur – Analyste QA` |
 
 ## Installation
 
