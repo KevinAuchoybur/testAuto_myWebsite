@@ -29,7 +29,7 @@ describe("Page A propos", () => {
 describe("Page A propos", () => {
   it("bloc Mon Parcours - Le lien pointe sur Mes expériences", () => {
      cy.get(".abx-parcours-cta").should("have.attr", "href")
-    .and("include", "#projects");
+    .and("include", "#experiences");
   });
 });
 
