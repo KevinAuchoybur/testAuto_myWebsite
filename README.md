@@ -4,10 +4,16 @@ Suite de tests end-to-end (E2E) écrite avec [Cypress](https://www.cypress.io/) 
 
 ## Scénarios automatisés
 
+**6 tests** répartis dans `cypress/e2e/home.cy.js`.
+
 | Fichier | Scénario | Vérification |
 |---|---|---|
 | `cypress/e2e/home.cy.js` | Chargement de la page d'accueil | La page se charge et le `<body>` est visible |
 | `cypress/e2e/home.cy.js` | Titre de l'onglet | Le `<title>` de la page vaut `Kevin Auchoybur – Analyste QA` |
+| `cypress/e2e/home.cy.js` | Bouton « Télécharger mon CV » | Le lien pointe vers `cv-fr-KevinAuchoybur.pdf` |
+| `cypress/e2e/home.cy.js` | Bouton LinkedIn | Le lien pointe vers le profil LinkedIn |
+| `cypress/e2e/home.cy.js` | Bouton WhatsApp | Le lien pointe vers la discussion WhatsApp (`wa.me`) |
+| `cypress/e2e/home.cy.js` | Bouton GitHub | Le lien pointe vers le profil GitHub |
 
 ## Installation
 
