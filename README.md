@@ -4,7 +4,7 @@ Suite de tests end-to-end (E2E) écrite avec [Cypress](https://www.cypress.io/) 
 
 ## Scénarios automatisés
 
-**18 tests** répartis dans `cypress/e2e/`.
+**22 tests** répartis dans `cypress/e2e/`.
 
 | Fichier | Scénario | Vérification |
 |---|---|---|
@@ -26,6 +26,10 @@ Suite de tests end-to-end (E2E) écrite avec [Cypress](https://www.cypress.io/) 
 | `cypress/e2e/expertises.cy.js` | Bloc « Méthodologie » | Le bloc est visible et contient le libellé attendu |
 | `cypress/e2e/expertises.cy.js` | Bloc « Suivi qualité » | Le bloc est visible et contient le libellé attendu |
 | `cypress/e2e/expertises.cy.js` | CTA « Mes projets » | Le lien pointe vers la section des projets (`#projects`) |
+| `cypress/e2e/experiences.cy.js` | Section « Mes expériences » | La section `#experiences` est visible |
+| `cypress/e2e/experiences.cy.js` | Bloc « MonGuichet.mc » | La carte est visible dans `#experiences` |
+| `cypress/e2e/experiences.cy.js` | Bloc « Powercard » | La carte est visible dans `#experiences` |
+| `cypress/e2e/experiences.cy.js` | Bloc « Système de régularisation des carrières » | La carte est visible dans `#experiences` |
 
 ## Installation
 
