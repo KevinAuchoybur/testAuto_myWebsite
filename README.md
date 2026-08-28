@@ -4,7 +4,7 @@ Suite de tests end-to-end (E2E) écrite avec [Cypress](https://www.cypress.io/) 
 
 ## Scénarios automatisés
 
-**6 tests** répartis dans `cypress/e2e/home.cy.js`.
+**7 tests** répartis dans `cypress/e2e/`.
 
 | Fichier | Scénario | Vérification |
 |---|---|---|
@@ -14,6 +14,7 @@ Suite de tests end-to-end (E2E) écrite avec [Cypress](https://www.cypress.io/) 
 | `cypress/e2e/home.cy.js` | Bouton LinkedIn | Le lien pointe vers le profil LinkedIn |
 | `cypress/e2e/home.cy.js` | Bouton WhatsApp | Le lien pointe vers la discussion WhatsApp (`wa.me`) |
 | `cypress/e2e/home.cy.js` | Bouton GitHub | Le lien pointe vers le profil GitHub |
+| `cypress/e2e/about.cy.js` | Section « À propos » | La section `#about` est visible |
 
 ## Installation
 
