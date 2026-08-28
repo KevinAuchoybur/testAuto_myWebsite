@@ -4,7 +4,7 @@ Suite de tests end-to-end (E2E) écrite avec [Cypress](https://www.cypress.io/) 
 
 ## Scénarios automatisés
 
-**14 tests** répartis dans `cypress/e2e/`.
+**18 tests** répartis dans `cypress/e2e/`.
 
 | Fichier | Scénario | Vérification |
 |---|---|---|
@@ -22,6 +22,10 @@ Suite de tests end-to-end (E2E) écrite avec [Cypress](https://www.cypress.io/) 
 | `cypress/e2e/about.cy.js` | Bloc « Ma devise » | Le bloc est visible et contient le libellé attendu |
 | `cypress/e2e/expertises.cy.js` | Section « Mes compétences » | La section `#expertises` est visible |
 | `cypress/e2e/expertises.cy.js` | Bloc « Tests fonctionnels » | Le bloc est visible et contient le libellé attendu |
+| `cypress/e2e/expertises.cy.js` | Bloc « Tests automatisés » | Le bloc est visible et contient le libellé attendu |
+| `cypress/e2e/expertises.cy.js` | Bloc « Méthodologie » | Le bloc est visible et contient le libellé attendu |
+| `cypress/e2e/expertises.cy.js` | Bloc « Suivi qualité » | Le bloc est visible et contient le libellé attendu |
+| `cypress/e2e/expertises.cy.js` | CTA « Mes projets » | Le lien pointe vers la section des projets (`#projects`) |
 
 ## Installation
 
