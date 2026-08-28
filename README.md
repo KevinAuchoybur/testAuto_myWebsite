@@ -4,7 +4,7 @@ Suite de tests end-to-end (E2E) écrite avec [Cypress](https://www.cypress.io/) 
 
 ## Scénarios automatisés
 
-**7 tests** répartis dans `cypress/e2e/`.
+**12 tests** répartis dans `cypress/e2e/`.
 
 | Fichier | Scénario | Vérification |
 |---|---|---|
@@ -15,6 +15,11 @@ Suite de tests end-to-end (E2E) écrite avec [Cypress](https://www.cypress.io/) 
 | `cypress/e2e/home.cy.js` | Bouton WhatsApp | Le lien pointe vers la discussion WhatsApp (`wa.me`) |
 | `cypress/e2e/home.cy.js` | Bouton GitHub | Le lien pointe vers le profil GitHub |
 | `cypress/e2e/about.cy.js` | Section « À propos » | La section `#about` est visible |
+| `cypress/e2e/about.cy.js` | Bloc « Ma vision du métier » | Le bloc est visible et contient le libellé attendu |
+| `cypress/e2e/about.cy.js` | Bloc « Mon parcours » | Le bloc est visible et contient le libellé attendu |
+| `cypress/e2e/about.cy.js` | CTA « Mon parcours » | Le lien pointe vers la section des expériences (`#projects`) |
+| `cypress/e2e/about.cy.js` | Bloc « Mes certifications » | Le bloc est visible et contient le libellé attendu |
+| `cypress/e2e/about.cy.js` | Bloc « Ma devise » | Le bloc est visible et contient le libellé attendu |
 
 ## Installation
 
