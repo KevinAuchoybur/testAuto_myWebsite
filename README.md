@@ -4,32 +4,38 @@ Suite de tests end-to-end (E2E) écrite avec [Cypress](https://www.cypress.io/) 
 
 ## Scénarios automatisés
 
-**22 tests** répartis dans `cypress/e2e/`.
+**26 tests** répartis dans `cypress/e2e/`.
+
+Les fichiers sont préfixés (`01-`, `02-`, …) pour fixer l'ordre d'exécution, qui suit la lecture des sections du site : accueil → à propos → compétences → expériences → projets.
 
 | Fichier | Scénario | Vérification |
 |---|---|---|
-| `cypress/e2e/home.cy.js` | Chargement de la page d'accueil | La page se charge et le `<body>` est visible |
-| `cypress/e2e/home.cy.js` | Titre de l'onglet | Le `<title>` de la page vaut `Kevin Auchoybur – Analyste QA` |
-| `cypress/e2e/home.cy.js` | Bouton « Télécharger mon CV » | Le lien pointe vers `cv-fr-KevinAuchoybur.pdf` |
-| `cypress/e2e/home.cy.js` | Bouton LinkedIn | Le lien pointe vers le profil LinkedIn |
-| `cypress/e2e/home.cy.js` | Bouton WhatsApp | Le lien pointe vers la discussion WhatsApp (`wa.me`) |
-| `cypress/e2e/home.cy.js` | Bouton GitHub | Le lien pointe vers le profil GitHub |
-| `cypress/e2e/about.cy.js` | Section « À propos » | La section `#about` est visible |
-| `cypress/e2e/about.cy.js` | Bloc « Ma vision du métier » | Le bloc est visible et contient le libellé attendu |
-| `cypress/e2e/about.cy.js` | Bloc « Mon parcours » | Le bloc est visible et contient le libellé attendu |
-| `cypress/e2e/about.cy.js` | CTA « Mon parcours » | Le lien pointe vers la section des expériences (`#experiences`) |
-| `cypress/e2e/about.cy.js` | Bloc « Mes certifications » | Le bloc est visible et contient le libellé attendu |
-| `cypress/e2e/about.cy.js` | Bloc « Ma devise » | Le bloc est visible et contient le libellé attendu |
-| `cypress/e2e/expertises.cy.js` | Section « Mes compétences » | La section `#expertises` est visible |
-| `cypress/e2e/expertises.cy.js` | Bloc « Tests fonctionnels » | Le bloc est visible et contient le libellé attendu |
-| `cypress/e2e/expertises.cy.js` | Bloc « Tests automatisés » | Le bloc est visible et contient le libellé attendu |
-| `cypress/e2e/expertises.cy.js` | Bloc « Méthodologie » | Le bloc est visible et contient le libellé attendu |
-| `cypress/e2e/expertises.cy.js` | Bloc « Suivi qualité » | Le bloc est visible et contient le libellé attendu |
-| `cypress/e2e/expertises.cy.js` | CTA « Mes projets » | Le lien pointe vers la section des projets (`#projects`) |
-| `cypress/e2e/experiences.cy.js` | Section « Mes expériences » | La section `#experiences` est visible |
-| `cypress/e2e/experiences.cy.js` | Bloc « MonGuichet.mc » | La carte est visible dans `#experiences` |
-| `cypress/e2e/experiences.cy.js` | Bloc « Powercard » | La carte est visible dans `#experiences` |
-| `cypress/e2e/experiences.cy.js` | Bloc « Système de régularisation des carrières » | La carte est visible dans `#experiences` |
+| `cypress/e2e/01-home.cy.js` | Chargement de la page d'accueil | La page se charge et le `<body>` est visible |
+| `cypress/e2e/01-home.cy.js` | Titre de l'onglet | Le `<title>` de la page vaut `Kevin Auchoybur – Analyste QA` |
+| `cypress/e2e/01-home.cy.js` | Bouton « Télécharger mon CV » | Le lien pointe vers `cv-fr-KevinAuchoybur.pdf` |
+| `cypress/e2e/01-home.cy.js` | Bouton LinkedIn | Le lien pointe vers le profil LinkedIn |
+| `cypress/e2e/01-home.cy.js` | Bouton WhatsApp | Le lien pointe vers la discussion WhatsApp (`wa.me`) |
+| `cypress/e2e/01-home.cy.js` | Bouton GitHub | Le lien pointe vers le profil GitHub |
+| `cypress/e2e/02-about.cy.js` | Section « À propos » | La section `#about` est visible |
+| `cypress/e2e/02-about.cy.js` | Bloc « Ma vision du métier » | Le bloc est visible et contient le libellé attendu |
+| `cypress/e2e/02-about.cy.js` | Bloc « Mon parcours » | Le bloc est visible et contient le libellé attendu |
+| `cypress/e2e/02-about.cy.js` | CTA « Mon parcours » | Le lien pointe vers la section des expériences (`#experiences`) |
+| `cypress/e2e/02-about.cy.js` | Bloc « Mes certifications » | Le bloc est visible et contient le libellé attendu |
+| `cypress/e2e/02-about.cy.js` | Bloc « Ma devise » | Le bloc est visible et contient le libellé attendu |
+| `cypress/e2e/03-expertises.cy.js` | Section « Mes compétences » | La section `#expertises` est visible |
+| `cypress/e2e/03-expertises.cy.js` | Bloc « Tests fonctionnels » | Le bloc est visible et contient le libellé attendu |
+| `cypress/e2e/03-expertises.cy.js` | Bloc « Tests automatisés » | Le bloc est visible et contient le libellé attendu |
+| `cypress/e2e/03-expertises.cy.js` | Bloc « Méthodologie » | Le bloc est visible et contient le libellé attendu |
+| `cypress/e2e/03-expertises.cy.js` | Bloc « Suivi qualité » | Le bloc est visible et contient le libellé attendu |
+| `cypress/e2e/03-expertises.cy.js` | CTA « Mes projets » | Le lien pointe vers la section des projets (`#projects`) |
+| `cypress/e2e/04-experiences.cy.js` | Section « Mes expériences » | La section `#experiences` est visible |
+| `cypress/e2e/04-experiences.cy.js` | Bloc « MonGuichet.mc » | La carte est visible dans `#experiences` |
+| `cypress/e2e/04-experiences.cy.js` | Bloc « Powercard » | La carte est visible dans `#experiences` |
+| `cypress/e2e/04-experiences.cy.js` | Bloc « Système de régularisation des carrières » | La carte est visible dans `#experiences` |
+| `cypress/e2e/05-projects.cy.js` | Section « Mes projets » | La section `#projects` est visible |
+| `cypress/e2e/05-projects.cy.js` | Bloc « kevinauchoybur.me » | La carte est visible dans `#projects` |
+| `cypress/e2e/05-projects.cy.js` | Bloc « AS Monaco FC » | La carte est visible dans `#projects` |
+| `cypress/e2e/05-projects.cy.js` | Bloc « Restful-Booker » | La carte est visible dans `#projects` |
 
 ## Installation
 
@@ -51,7 +57,7 @@ npx cypress run
 
 Lancer un seul fichier de test :
 ```
-npx cypress run --spec "cypress/e2e/home.cy.js"
+npx cypress run --spec "cypress/e2e/01-home.cy.js"
 ```
 
 Sortie minimale (reporter "dot") :

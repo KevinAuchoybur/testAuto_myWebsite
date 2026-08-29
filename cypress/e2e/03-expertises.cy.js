@@ -1,12 +1,12 @@
+describe("Page Mes compétences", () => {
 beforeEach(() => {
   cy.visit("/");
 });
 
-describe("Page Mes compétences", () => {
   it("affiche la section Mes compétences", () => {
     cy.get("#expertises").should("be.visible");
   });
-});
+
 
   it("affiche le bloc Tests fonctionnels", () => {
     cy.get('[data-i18n="skills.g1.title"]')
@@ -43,3 +43,4 @@ it("Le lien pointe sur Mes projets", () => {
      cy.get(".skx-projects-cta").should("have.attr", "href")
     .and("include", "#projects");
   });
+});
