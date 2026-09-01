@@ -12,4 +12,13 @@ module.exports = defineConfig({
 
   reporter: "cypress-mochawesome-reporter",
 
+  reporterOptions: {
+    reportPageTitle: "Rapport de tests E2E – kevinauchoybur.me",
+    reportTitle: "Tests E2E – kevinauchoybur.me",
+    charts: true,
+    embeddedScreenshots: true,
+    inlineAssets: true,
+    saveJson: true,
+  },
+
 });

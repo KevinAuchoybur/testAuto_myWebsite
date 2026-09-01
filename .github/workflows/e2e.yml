@@ -1,10 +1,43 @@
 name: E2E
+
 on: [push, pull_request]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Un seul déploiement Pages à la fois
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
   cypress:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: cypress-io/github-action@v6
         with:
           browser: chrome
+
+      # On publie le rapport même si des tests échouent
+      - name: Upload rapport (artifact Pages)
+        if: always() && github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: cypress/reports/html
+
+  deploy:
+    needs: cypress
+    # Déploie uniquement depuis main, quel que soit le résultat des tests
+    if: always() && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy vers GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

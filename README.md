@@ -77,3 +77,15 @@ Il est ensuite disponible ici :
 cypress/reports/html/index.html
 ```
 Ouvrir ce fichier dans un navigateur pour consulter le rapport (résultats, durées, captures d'écran des échecs).
+
+## Rapport publié en ligne
+
+À chaque `push` sur `main`, le workflow GitHub Actions (`.github/workflows/e2e.yml`) exécute la suite puis publie le rapport Mochawesome sur GitHub Pages :
+
+<https://kevinauchoybur.github.io/testAuto_myWebsite/>
+
+Le rapport est publié même si des tests échouent.
+
+### Activation (une seule fois)
+
+Dans le repo GitHub : **Settings → Pages → Build and deployment → Source : GitHub Actions**.
