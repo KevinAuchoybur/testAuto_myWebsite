@@ -7,8 +7,8 @@ describe("Page Mes projets", () => {
     cy.get("#projects").should("be.visible");
   });
 
-  it("affiche le bloc kevinauchoybur.me", () => {
-    cy.contains("#projects .repo-card", "kevinauchoybur.me")
+  it("affiche le bloc Kevinauchoybur.me", () => {
+    cy.contains("#projects .repo-card", "Kevinauchoybur.me")
     .scrollIntoView()
     .should("be.visible");
   });

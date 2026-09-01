@@ -33,7 +33,7 @@ Les fichiers sont préfixés (`01-`, `02-`, …) pour fixer l'ordre d'exécution
 | `cypress/e2e/04-experiences.cy.js` | Bloc « Powercard » | La carte est visible dans `#experiences` |
 | `cypress/e2e/04-experiences.cy.js` | Bloc « Système de régularisation des carrières » | La carte est visible dans `#experiences` |
 | `cypress/e2e/05-projects.cy.js` | Section « Mes projets » | La section `#projects` est visible |
-| `cypress/e2e/05-projects.cy.js` | Bloc « kevinauchoybur.me » | La carte est visible dans `#projects` |
+| `cypress/e2e/05-projects.cy.js` | Bloc « Kevinauchoybur.me » | La carte est visible dans `#projects` |
 | `cypress/e2e/05-projects.cy.js` | Bloc « AS Monaco FC » | La carte est visible dans `#projects` |
 | `cypress/e2e/05-projects.cy.js` | Bloc « Restful-Booker » | La carte est visible dans `#projects` |
 
